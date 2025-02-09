@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carta para mi sobrina</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 20px;
+    }
+    .card {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .header, .footer {
+        text-align: center;
+        color: #4682b4;
+    }
+    .content {
+        margin-top: 20px;
+    }
+    .hidden-content {
+        display: none;
+        margin-top: 20px;
+    }
+    .btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #4682b4;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h2>Querida melany,</h2>
+        </div>
+        <div class="content">
+            <p>
+                Esta carta es solo para ti, de nadie mas, aqui quiero decirte que te quiero mucho y que soy afortunado de tenerte 
+            </p>
+            <p>
+                melany hermosa para siempre 
+            </p>
+            <button class="btn" onclick="mostrarMas()">Mostrar más</button>
+            <div class="hidden-content" id="masTexto">
+                <p>
+                    Estoy aquí para apoyarte en todo lo que necesites. Siempre puedes contar conmigo para cualquier cosa, grande o pequeña.
+                </p>
+                <p>
+                    Con todo mi cariño,
+                </p>
+                <p>
+                    ATT-Kasandra puta para siempre
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="heart">&#9829;</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMas() {
+            var x = document.getElementById("masTexto");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
